@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "CIS_backend": {
+      "main": "src/CIS_backend/main.mo",
+      "type": "motoko"
+    },
+    "CIS_frontend": {
+      "dependencies": [
+        "CIS_backend"
+      ],
+      "source": [
+        "src/CIS_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "CIS_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
